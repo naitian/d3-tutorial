@@ -1,0 +1,18 @@
+figure.vis {
+    max-width: 400px;
+    font-family: "Open Sans";
+}
+
+figure.vis svg {
+    width: 100%;
+    border: 1px solid #374567;
+}
+
+figure.vis .title-text {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+figure.vis .label-text {
+    font-size: 0.8rem;
+}

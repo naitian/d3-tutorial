@@ -213,8 +213,8 @@ at once.
 ```js
 g.selectAll("circle").attr("r", 5);
 ```
-I've put a setup function in the code which create the SVG and G elements with
-the proper sizes and offsets.
+I've put a helper setup function in the code which create the SVG and G elements
+with the proper sizes and offsets.
 
 To use this, pass in an element object for `el`, your desired width and height,
 and an object representing margins:
@@ -226,3 +226,13 @@ and an object representing margins:
     bottom: 20
 }
 ```
+
+### Playing with Data
+
+We can fetch CSV data using `d3.csv`.
+```js
+d3.csv("./data/listings.csv").then(d => console.log(d));
+```
+Confused about the `then`? See this
+[reference](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
+for more about asynchronous code and promises.
